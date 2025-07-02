@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Manutenção do Órgão Colegiado</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        margin: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 800px;
+    }
+    th, td {
+        border: 1px solid #cccccc;
+        padding: 4px;
+        vertical-align: top;
+    }
+    input[type="text"], select, textarea {
+        font-size: 13px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 50px;
+    }
+    .button {
+        padding: 4px 10px;
+        font-size: 13px;
+        margin-right: 4px;
+        
+    }
+    .no-border {
+        border: none;
+        padding: 0;
+    }
+</style>
+</head>
+<body>
+
+<p><strong>Colegiado UNESP ::</strong><br>
+Manutenção do Órgão Colegiado</p>
+
+<table>
+    <tr>
+        <td><strong>Unidade</strong></td>
+        <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+    </tr>
+    <tr>
+        <td><strong>Tipo Colegiado</strong></td>
+        <td>CONGREGAÇÃO</td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+        <td colspan="4"><strong>Órgão Colegiado</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Nome</strong></td>
+        <td colspan="3">
+            <input type="text" value="CONGREGAÇÃO DA FACULDADE DE ILHA SOLTEIRA">
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Sigla</strong></td>
+        <td>
+            <input type="text" value="CFIS">
+        </td>
+        <td><strong>Status</strong></td>
+        <td>
+            <select>
+                <option selected>ATIVADO</option>
+                <option>DESATIVADO</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Data Ativação</strong></td>
+        <td>
+            <input type="text" value="15/10/2000">
+        </td>
+        <td><strong>Data Desativação</strong></td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Órgão de Origem</strong></td>
+        <td colspan="3">
+            <table class="no-border" style="width:100%;">
+                <tr>
+                    <td style="width:100%; padding:0;">
+                        <input type="text">
+                    </td>
+                    <td style="padding-left:4px;">
+                        <input type="button" class="button" value="Buscar">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Órgão Superior</strong></td>
+        <td colspan="3">
+            <table class="no-border" style="width:100%;">
+                <tr>
+                    <td style="width:100%; padding:0;">
+                        <input type="text">
+                    </td>
+                    <td style="padding-left:4px;">
+                        <input type="button" class="button" value="Buscar">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Documentação</strong></td>
+        <td colspan="3">
+            <textarea>Órgão criado com o objetivo de aprovar normas da unidade.</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" style="text-align:center;">
+            <input type="button" class="button" value="Salvar">
+            <input type="button" class="button" value="Excluir">
+        </td>
+    </tr>
+</table>
+
+<br>
+<input type="button" class="button" value="Retornar">
+
+</body>
+</html>
